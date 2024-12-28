@@ -1,4 +1,11 @@
 {
+  "name": "vercel-express-api",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vercel dev",
+    "build": "vercel build",
+    "start": "vercel start"
+  },
   "dependencies": {
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
@@ -7,3 +14,4 @@
     "mongoose": "^8.9.2"
   }
 }
+
