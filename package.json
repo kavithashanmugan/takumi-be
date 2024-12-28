@@ -1,10 +1,9 @@
 {
   "name": "vercel-express-api",
   "version": "1.0.0",
+  "main":"index.js",
   "scripts": {
-    "dev": "vercel dev",
-    "build": "vercel build",
-    "start": "vercel start"
+    "start": "node index.js"
   },
   "dependencies": {
     "body-parser": "^1.20.3",
