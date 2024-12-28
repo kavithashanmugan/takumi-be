@@ -31,6 +31,10 @@ async function connectToDatabase() {
 }
 
 // Routes
+app.get('/', (req, res) => {
+  res.status(200).json({ message: 'Welcome to Takumi!' });
+});
+
 app.use('/api/tasks', taskRoutes);
 
 // Create the handler
