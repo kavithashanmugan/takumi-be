@@ -42,6 +42,16 @@ router.post('/', async (req, res) => {
     }
 });
 
+router.get('/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const getTask = await Task.findById(id);
+        res.status(200).json(getTask);
+    } catch (err) {
+        res.status(400).json({ error: 'Failed to fetch task' });
+    }
+});
+
 router.put('/:id', async (req, res) => {
     try {
         const { id } = req.params;
